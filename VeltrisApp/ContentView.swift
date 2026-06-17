@@ -1,24 +1,26 @@
-//
-//  ContentView.swift
-//  VeltrisApp
-//
-//  Created by Nathan Arunodaya on 17/06/26.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            VStack {
+                Text("Screen 1")
+                    .font(.largeTitle)
+                NavigationLink("Go to Screen 2", destination: SecondView())
+            }
         }
-        .padding()
     }
 }
 
-#Preview {
-    ContentView()
+struct SecondView: View {
+    @AppStorage("darkMode") var darkMode: Bool = false
+    
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Screen 2")
+                .font(.largeTitle)
+            Toggle("Dark Mode", isOn: $darkMode)
+                .padding()
+        }
+    }
 }
