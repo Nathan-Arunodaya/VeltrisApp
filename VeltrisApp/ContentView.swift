@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct ContentView: View {
+    @AppStorage("darkMode") var darkMode: Bool = false
+
     var body: some View {
         NavigationStack {
             VStack {
@@ -9,12 +11,13 @@ struct ContentView: View {
                 NavigationLink("Go to Screen 2", destination: SecondView())
             }
         }
+        .preferredColorScheme(darkMode ? .dark : .light)
     }
 }
 
 struct SecondView: View {
     @AppStorage("darkMode") var darkMode: Bool = false
-    
+
     var body: some View {
         VStack(spacing: 20) {
             Text("Screen 2")
