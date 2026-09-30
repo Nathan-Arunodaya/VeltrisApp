@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		6CEB4C96306B8846008AD52F /* weatherview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEB4C95306B8841008AD52F /* weatherview.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		6CEFCB672FE2884800C014FC /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -24,6 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CEB4C95306B8841008AD52F /* weatherview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherview.swift; sourceTree = "<group>"; };
 		6CEFCB592FE2884200C014FC /* VeltrisApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VeltrisApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEFCB662FE2884800C014FC /* VeltrisAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeltrisAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEFCB702FE2884900C014FC /* VeltrisAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VeltrisAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +84,7 @@
 				6CEFCB692FE2884800C014FC /* VeltrisAppTests */,
 				6CEFCB732FE2884900C014FC /* VeltrisAppUITests */,
 				6CEFCB5A2FE2884200C014FC /* Products */,
+				6CEB4C95306B8841008AD52F /* weatherview.swift */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,6 +242,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CEB4C96306B8846008AD52F /* weatherview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,6 +9,7 @@ struct ContentView: View {
                 Text("Screen 1")
                     .font(.largeTitle)
                 NavigationLink("Go to Screen 2", destination: SecondView())
+                NavigationLink("Weather", destination: WeatherView())
             }
         }
         .preferredColorScheme(darkMode ? .dark : .light)
